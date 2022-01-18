@@ -5,7 +5,7 @@ missclass=function(X,X1){
   return(1-sum(diag(table(X,X1)))/n)
 }
 
-data = read.csv("C:/Users/hp/OneDrive/Desktop/LiU Sem I/Machine Learning/Lab/ML Lab 2/bank-full.csv", header=TRUE, sep = ";", stringsAsFactors = TRUE)
+data = read.csv("bank-full.csv", header=TRUE, sep = ";", stringsAsFactors = TRUE)
 data = subset(data, select=c(-duration))
 
 n = dim(data)[1]
